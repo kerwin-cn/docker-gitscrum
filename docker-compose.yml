@@ -18,7 +18,7 @@ nginx-gitscrum:
   restart: always
   image: nginx
   ports:
-    - "80:80"
+    - "10680:80"
   links:
     - phpfpm-gitscrum
   volumes:
@@ -31,7 +31,7 @@ mysql-gitscrum:
   restart: always
   image: mysql
   ports:
-    - "3306:3306"
+    - "3336:3306"
   environment:
     MYSQL_ROOT_PASSWORD: 123456
     MYSQL_USER: gitscrum
